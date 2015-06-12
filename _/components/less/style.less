@@ -1,0 +1,204 @@
+//VARIABLES
+@lighterblue:   rgb(108, 118, 127);  //social_networks backgound
+@lightblue:     rgb(58, 69, 90);     //scrollbar background
+@blue:          rgb(40, 52, 75);     //figure background
+@darkblue:      rgb(39, 51, 73);     //header, books & footer background
+@red:           rgb(254, 78, 78);    //contact background
+@darkred:       rgb(228, 70, 70);    //special_order background
+@darkerred:     rgb(177, 54, 54);    //special_order icons
+
+//CLEARFIX
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+} 
+.cf:after {
+    clear: both;
+}
+
+//BODY
+body {
+    margin: 0 auto;
+}
+
+//HEADER
+header {
+    width: 100%;
+    background: @darkblue;
+    color: white;
+}
+.navbar-default {
+  background-color: @darkblue;
+  border-color: @darkblue;
+}
+.navbar-collapse {
+    float: right;
+}
+.navbar-brand {
+    height: auto;
+}
+.navbar-brand img {
+    width: 100%;
+    max-width: 360px;
+}
+.nav>li {  
+    display: inline-block;
+}
+
+//MAIN
+#book_shelf {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+#books {
+    height: 940px; //to be deleted
+    width: 100%;
+    #pick_books {
+        height: 475px; //to be deleted
+        background: @darkblue;
+    }
+    #book_info {
+        height: 465px; 
+        background: white;
+    }
+}
+
+#contact {
+    height: 360; //to be deleted
+    width: 100%;
+    background: @red;
+}
+#special_orders {
+    height: 285px; //to be deleted
+    width: 100%;
+    background: @darkred;
+}
+#parallax {
+    height: 240px; //to be deleted
+    width: 100%;
+}
+
+//FOOTER
+footer {
+    width: 100%;
+    background: @darkblue;
+    color: white;
+}
+#no4 li {
+    display: inline;
+}
+#no1 .fa,
+#no2 .fa {
+    background: @darkblue;
+    color: @lighterblue;
+}
+#no4 .fa-circle {
+    background: @darkblue;
+    color: @lightblue;
+}
+.rot_link {
+    margin-right: .5em;
+}
+.rot_icon {
+    transition: all .6s ease-in-out;
+}
+.rot_link:hover .rot_icon {
+    transform: rotate(360deg);
+}
+
+//MOBILE PORTRAIT
+@media only screen and (max-width: 559px) {
+    .navbar-brand {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .navbar-brand img {
+        width: 100%;
+    }
+    .navbar-toggle {
+        margin: 13px 13px 13px 0;
+        float: right;
+    }
+    .navbar-collapse {
+        width: 100%;
+        text-align: left;
+    }
+    .navbar-nav li {
+        display: block;
+    }
+}
+
+//MOBILE LANDSCAPE
+@media only screen and (min-width: 560px) and (max-width: 767px) {
+    .navbar-brand {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .navbar-brand img {
+        width: 100%;
+        max-width: 320px;
+    }
+    .navbar-toggle {
+        margin: 13px 13px 13px 0;
+        float: right;
+    }
+    .navbar-collapse {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+//TABLET
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-header {
+        width: 100%;
+        text-align: center;
+        margin-bottom: -5px;
+    }
+    a.navbar-brand {
+        display: inline-block;
+        float: none;
+    }
+    .navbar-brand img {
+        max-width: 300px;
+    }
+    .navbar-collapse {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: -5px;
+    }
+    .navbar-nav {
+        float: none;
+        display: inline-block;
+    }
+    .navbar-nav li a {
+        padding: 2px 20px 10px 20px;
+    }
+}
+
+//DESKTOP
+@media only screen and (min-width: 992px) {
+    .navbar-header {
+        width: 35%;
+    }
+    a.navbar-brand {
+        padding-left: 50px;
+    }
+    .navbar-collapse {
+        width: 65%;
+        text-align: center;
+    }
+    .navbar-nav {
+        float: none;
+        display: inline-block;
+    }
+    .navbar-nav li a {
+        padding: 26px;
+    }
+}
+
+

@@ -1,0 +1,56 @@
+dataHandler([
+{
+    "h1" : "La Bataille de Kossovo",
+    "h4" : "chants épiques serbes",
+    "image" : "<img src='images/List-Image1.jpg'>",
+    "top" : "<p>édition bilingue</p><p>traduit du serbe par Adolphe d'Avril</p><p>préface de Komnen Becirovic</p>",
+    "bottom" : "<p>paru décembre 2006</p><p>108 pages, <strong>Prix 5 &euro;</strong></p><p>Format 12x19 cm</p><p>isbn 978-2-35405-001-6</p>",
+    "blockquote" : "&ldquo;Le désastre de Kossovo avait frappé profondément l’imagination des Serbes ; il est devenu le principal aliment de leur poésie populaire. Comme toujours, cette poésie a transformé l’histoire en l’idéalisant. Les personnages réels ou fictifs qui figurent dans la légende ont pris des proportions réellement épiques. Lazare y représente la splendeur de la royauté. Sous ce rapport, il rappellerait plutôt les héros indiens, français, espagnols, que ceux de la Grèce ou de la Germanie&rdquo; <cite><strong>Somewhere</strong></cite>",
+    "p" : "Avec l’épopée de Kossovo, nous proposons au lecteur d’accéder directement, par lui-même, aux sources d’un mythe fondateur qui, au-delà de l’histoire serbe, touche à l’universel.</p>"
+},
+{
+    "h1" : "L'Home qui inventa",
+    "h4" : "chants",
+    "image" : "<img src='images/List-Image2.jpg'>",
+    "top" : "<p>édition bilingue</p><p>traduit du serbe par Adolphe d'Avril</p>",
+    "bottom" : "<p>paru décembre 2006</p><p>108 pages, <strong>Prix 25 &euro;</strong></p><p>Format 12x19 cm</p><p>isbn 978-2-35405-001-2</p>",
+    "blockquote" : "&ldquo;Le désastre de Kossovo avait frappé profondément l’imagination des Serbes ; il est devenu le principal aliment de leur poésie populaire. Comme toujours, cette poésie a transformé l’histoire en l’idéalisant. Les personnages réels ou fictifs qui figurent dans la légende ont pris des proportions réellement épiques. Sous ce rapport, il rappellerait plutôt les héros indiens, français, espagnols, que ceux de la Grèce ou de la Germanie&rdquo; <cite><strong>Someone</strong></cite>",
+    "p" : "Les chants épiques serbes ont été transmis oralement, génération après génération, siècle après siècle, et ont joué un rôle essentiel dans la préservation de l’identité nationale du peuple serbe. Avec l’épopée de Kossovo, nous proposons au lecteur d’accéder directement, par lui-même, aux sources d’un mythe fondateur qui, au-delà de l’histoire serbe, touche à l’universel.</p>"
+},
+{
+    "h1" : "Contes popularies Serbes",
+    "h4" : "text",
+    "image" : "<img src='images/List-Image3.jpg'>",
+    "top" : "<p>édition bilingue</p><p>traduit du serbe par Adolphe d'Avril</p><p>préface de Komnen Becirovic</p>",
+    "bottom" : "<p>paru décembre 2000</p><p>104 pages, <strong>Prix 12 &euro;</strong></p><p>Format 12x19 cm</p><p>isbn 978-2-35405-001-3</p>",
+    "blockquote" : "&ldquo;Le désastre de Kossovo avait frappé profondément l’imagination des Serbes ; il est devenu le principal aliment de leur poésie populaire. Comme toujours, cette poésie a transformé l’histoire en l’idéalisant. Les personnages réels ou fictifs qui figurent dans la légende ont pris des proportions réellement épiques. Lazare y représente la splendeur de la royauté. Son mobile est le sentiment exalté du devoir, la soumission à Dieu, le dévouement absolu. Sous ce rapport, il rappellerait plutôt les héros indiens, français, espagnols, que ceux de la Grèce ou de la Germanie&rdquo; <cite><strong>V.I.P.</strong></cite>",
+    "p" : "Les chants épiques serbes ont été transmis oralement, génération après génération, siècle après siècle, et ont joué un rôle essentiel dans la préservation de l’identité nationale du peuple serbe. Avec l’épopée de Kossovo, nous proposons au lecteur d’accéder directement, par lui-même, aux sources d’un mythe fondateur qui, au-delà de l’histoire serbe, touche à l’universel.</p>"
+},
+{
+    "h1" : "Nikola Tesla",
+    "h4" : "épiques serbes",
+    "image" : "<img src='images/List-Image4.jpg'>",
+    "top" : "<p>édition bilingue</p><p>préface de Komnen Becirovic</p>",
+    "bottom" : "<p>paru décembre 2010</p><p>108 pages, <strong>Prix 19 &euro;</strong></p><p>Format 12x19 cm</p><p>isbn 978-2-35405-001-5</p>",
+    "blockquote" : "&ldquo;Le désastre de Kossovo avait frappé profondément l’imagination des Serbes ; il est devenu le principal aliment de leur poésie populaire. Comme toujours, cette poésie a transformé l’histoire en l’idéalisant. Les personnages réels ou fictifs qui figurent dans la légende ont pris des proportions réellement épiques. Lazare y représente la splendeur de la royauté. Son mobile est le sentiment exalté du devoir, la soumission à Dieu, le dévouement absolu. Sous ce rapport, il rappellerait plutôt les héros indiens, français, espagnols, que ceux de la Grèce ou de la Germanie&rdquo; <cite><strong>Captain Planet</strong></cite>",
+    "p" : "Les chants épiques serbes ont été transmis oralement, génération après génération, siècle après siècle, et ont joué un rôle essentiel dans la préservation de l’identité nationale du peuple serbe. Avec l’épopée de Kossovo, nous proposons au lecteur d’accéder directement, par lui-même, aux sources d’un mythe fondateur qui, au-delà de l’histoire serbe, touche à l’universel.</p>"
+},
+{
+    "h1" : "Anthologie de la poesie",
+    "h4" : "chants serbes",
+    "image" : "<img src='images/List-Image5.png'>",
+    "top" : "<p>édition bilingue</p><p>traduit du serbe par Adolphe d'Avril</p><p>préface de Komnen Becirovic</p>",
+    "bottom" : "<p>paru décembre 2006</p><p>108 pages, <strong>Prix 14 &euro;</strong></p><p>Format 12x19 cm</p><p>isbn 978-2-35405-001-6</p>",
+    "blockquote" : "&ldquo;Le désastre de Kossovo avait frappé profondément l’imagination des Serbes ; il est devenu le principal aliment de leur poésie populaire. Comme toujours, cette poésie a transformé l’histoire en l’idéalisant. Les personnages réels ou fictifs qui figurent dans la légende ont pris des proportions réellement épiques. Lazare y représente la splendeur de la royauté. Son mobile est le sentiment exalté du devoir, la soumission à Dieu, le dévouement absolu. Sous ce rapport, il rappellerait plutôt les héros indiens, français, espagnols, que ceux de la Grèce ou de la Germanie&rdquo; <cite><strong>Adolphe D'Avril</strong></cite>",
+    "p" : "Les chants épiques serbes ont été transmis oralement, génération après génération, siècle après siècle, et ont joué un rôle essentiel dans la préservation de l’identité nationale du peuple serbe. Avec l’épopée de Kossovo, nous proposons au lecteur d’accéder directement, par lui-même, aux sources d’un mythe fondateur qui, au-delà de l’histoire serbe, touche à l’universel.</p>"
+},
+{
+    "h1" : "Le Livre de Miloutine",
+    "h4" : "chants épiques",
+    "image" : "<img src='images/List-Image6.jpg'>",
+    "top" : "<p>édition bilingue</p><p>traduit du serbe par Adolphe d'Avril</p><p>préface de Komnen Becirovic</p>",
+    "bottom" : "<p>paru décembre 2006</p><p>108 pages, <strong>Prix 14.1 &euro;</strong></p><p>Format 12x19 cm</p><p>isbn 978-2-35405-001-7</p>",
+    "blockquote" : "&ldquo;Le désastre de Kossovo avait frappé profondément l’imagination des Serbes ; il est devenu le principal aliment de leur poésie populaire. Les personnages réels ou fictifs qui figurent dans la légende ont pris des proportions réellement épiques. Lazare y représente la splendeur de la royauté. Son mobile est le sentiment exalté du devoir, la soumission à Dieu, le dévouement absolu. Sous ce rapport, il rappellerait plutôt les héros indiens, français, espagnols, que ceux de la Grèce ou de la Germanie&rdquo; <cite><strong>Important person</strong></cite>",
+    "p" : "Les chants épiques serbes ont été transmis oralement, génération après génération, siècle après siècle, et ont joué un rôle essentiel dans la préservation de l’identité nationale du peuple serbe. Avec l’épopée de Kossovo, nous proposons au lecteur d’accéder directement, par lui-même, aux sources d’un mythe fondateur qui, au-delà de l’histoire serbe, touche à l’universel.</p>"
+}
+]);
