@@ -6,6 +6,7 @@
 @red:           rgb(254, 78, 78);    //contact background
 @darkred:       rgb(228, 70, 70);    //special_order background
 @darkerred:     rgb(177, 54, 54);    //special_order icons
+@gray:          rgb(91, 102, 118);   //footer bottom text
 
 //CLEARFIX
 .cf:before,
@@ -20,6 +21,9 @@
 //BODY
 body {
     margin: 0 auto;
+    ul li {
+        list-style: none;
+    }
 }
 
 //HEADER
@@ -54,7 +58,7 @@ header {
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
     transform: rotateX(360deg);
-    transition: all .5s ease-in
+    transition: all .5s ease-in;
 }
 
 //MAIN
@@ -97,28 +101,88 @@ footer {
     width: 100%;
     background: @darkblue;
     color: white;
+    .rot_link {
+        margin-right: .3em;
+    }
+    .rot_icon {
+        transition: all .6s ease-in-out;
+    }
+    .rot_link:hover .rot_icon {
+        transform: rotate(360deg);
+    }
+    #top.container-fluid {
+        font-size: .85em;
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        h4 {
+            font-size: 1.5em;
+            color: @darkred;
+            padding-top: 50px;
+            margin: 0;
+        }
+        p {
+            padding-top: 30px;
+            margin-bottom: 0;
+        }
+    }
+    .row {
+        margin: 0 auto;
+    }
+    .col-md-6 {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: left;
+    }
+    #second ul {
+        padding: 30px 0 0 0;
+    }
+    #second li {
+        padding: 0 0 18px 0;
+    }
+    #no3 li a {
+        color: white;
+        &:hover {
+            text-decoration: none;
+            transform: rotateX(360deg);
+            transition: all .5s ease-in;
+        }
+    }
+    #no4 li {
+        display: inline-block;
+    }
+    #no1 .fa,
+    #no2 .fa {
+        background: @darkblue;
+        color: @lighterblue;
+    }
+    #no4 .fa-circle {
+        background: @darkblue;
+        color: @lightblue;
+    }
+    ul {
+        padding-left: 0;
+        padding-top: 25px;
+        li {
+            padding-top: 10px;
+        }
+    }
+    #bottom {
+        color: @gray;
+        width: 85%;
+        margin: 0 auto;
+        border-top: 1px solid @lightblue;
+        text-align: center;
+        clear: both;
+        font-size: .85em;
+        p {
+            padding: 18px 0 20px 0;
+            margin: 0;
+        }
+    }
 }
-#no4 li {
-    display: inline;
-}
-#no1 .fa,
-#no2 .fa {
-    background: @darkblue;
-    color: @lighterblue;
-}
-#no4 .fa-circle {
-    background: @darkblue;
-    color: @lightblue;
-}
-.rot_link {
-    margin-right: .5em;
-}
-.rot_icon {
-    transition: all .6s ease-in-out;
-}
-.rot_link:hover .rot_icon {
-    transform: rotate(360deg);
-}
+
 
 //MOBILE PORTRAIT
 @media only screen and (max-width: 559px) {
@@ -138,14 +202,53 @@ footer {
     .navbar-collapse {
         width: 100%;
         text-align: left;
+        font-size: .75em;
     }
     .navbar-nav li {
         display: block;
     }
     .navbar-default .navbar-nav>li>a {
         color: white;
-        padding: 3px 0 3px 5px;
-        
+        padding: 1px 0 1px 5px;
+    }
+    footer {
+        #top.container-fluid {
+            h4 {
+                padding-top: 25px;
+            }
+            p {
+                padding-top: 15px;
+            }
+            width: 100%;
+            font-size: .8em;
+            #first ul,
+            #second ul {
+                padding-top: 15px;
+                li {
+                    padding-top: 3px;
+                }
+            }
+            #first ul {
+                margin-bottom: 0;
+            }
+            #no3 ul li {
+                padding-top: 7px;
+                padding-bottom: 0;
+            }
+        }
+        #bottom {
+            width: 100%;
+            font-size: .8em;
+        }
+        #no1,
+        #no3 {
+            text-align: right;
+            padding: 0 15px 0 5px;
+        }
+        #no2, 
+        #no4 {
+            padding: 0 5px 0 15px;
+        }
     }
 }
 
@@ -167,11 +270,50 @@ footer {
     .navbar-collapse {
         width: 100%;
         text-align: center;
+        font-size: .8em;
     }
     .navbar-default .navbar-nav>li>a {
         color: white;
-        padding: 5px 20px 5px 20px;
-        
+        padding: 2px 20px 2px 20px;
+    }
+    footer {
+        #top.container-fluid {
+            h4 {
+                padding-top: 30px;
+            }
+            p {
+                padding-top: 20px;
+            }
+            width: 100%;
+            font-size: .85em;
+            #first ul,
+            #second ul {
+                padding-top: 20px;
+                li {
+                    padding-top: 5px;
+                }
+            }
+            #first ul {
+                margin-bottom: 0;
+            }
+            #no3 ul li {
+                padding-top: 9px;
+                padding-bottom: 0;
+            }
+        }
+        #bottom {
+            width: 100%;
+            font-size: .8em;
+        }
+        #no1,
+        #no3 {
+            text-align: right;
+            padding-right: 20px;
+        }
+        #no2, 
+        #no4 {
+            padding-left: 20px;
+        }
     }
 }
 
@@ -204,6 +346,46 @@ footer {
         margin-top: -8px;
         color: white;
     }
+    footer {
+        #top.container-fluid {
+            h4 {
+                padding-top: 30px;
+            }
+            p {
+                padding-top: 25px;
+            }
+            width: 100%;
+            font-size: 1em;
+            #first ul,
+            #second ul {
+                padding-top: 25px;
+                padding-bottom: 15px;
+                li {
+                    padding-top: 8px;
+                }
+            }
+            #first ul {
+                margin-bottom: 0;
+            }
+            #no3 ul li {
+                padding-top: 11px;
+                padding-bottom: 0;
+            }
+        }
+        #bottom {
+            width: 100%;
+            font-size: .9em;
+        }
+        #no1,
+        #no3 {
+            text-align: right;
+            padding-right: 40px;
+        }
+        #no2, 
+        #no4 {
+            padding-left: 40px;
+        }
+    }
 }
 
 //DESKTOP
@@ -227,7 +409,6 @@ footer {
         margin-bottom: -5px;
         color: white;
     }
-
 }
 
 
