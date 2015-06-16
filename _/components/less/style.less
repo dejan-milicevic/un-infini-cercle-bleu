@@ -24,6 +24,9 @@ body {
     ul li {
         list-style: none;
     }
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 //HEADER
@@ -38,6 +41,7 @@ header {
 }
 .navbar-collapse {
     float: right;
+    transition: all 0.5s ease;
 }
 .navbar-brand {
     height: auto;
@@ -91,9 +95,46 @@ header {
     width: 100%;
     background: @darkred;
 }
+
+//MAIN - PARALAX
 #parallax {
-    height: 240px; //to be deleted
+    height: 240px;
     width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    #img1,
+    #img2 {
+        height: 1000px;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    #img1 {
+        background: url(../../images/1.png) repeat;
+    }
+    #img2 {
+        background: url(../../images/2.png) repeat;
+    }
+    #button {
+        font-size: 1.1em;
+        color: black;
+        letter-spacing: .4em;
+        width: 20%;
+        padding: 25px;
+        border-top: 3px solid @red;
+        background-color: white;
+        opacity: 0.7;
+        position: relative;
+        top: 109px;
+        transition: all 0.5s ease 0s;
+        .fa-caret-right {
+            color: @red;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 //FOOTER
@@ -144,7 +185,6 @@ footer {
     #no3 li a {
         color: white;
         &:hover {
-            text-decoration: none;
             transform: rotateX(360deg);
             transition: all .5s ease-in;
         }
@@ -187,7 +227,7 @@ footer {
 //MOBILE PORTRAIT
 @media only screen and (max-width: 559px) {
     .navbar-brand {
-        width: 70%;
+        width: 78%;
         margin: 0 auto;
         padding: 13px 15px 5px 15px;
     }
@@ -211,6 +251,15 @@ footer {
         color: white;
         padding: 1px 0 1px 5px;
     }
+    #parallax {
+        #button {
+        font-size: .85em;
+        letter-spacing: .13em;
+        opacity: .8;
+        width: 20%;
+        padding: 13px;
+        }
+    }
     footer {
         #top.container-fluid {
             h4 {
@@ -220,7 +269,7 @@ footer {
                 padding-top: 15px;
             }
             width: 100%;
-            font-size: .8em;
+            font-size: .75em;
             #first ul,
             #second ul {
                 padding-top: 15px;
@@ -243,11 +292,11 @@ footer {
         #no1,
         #no3 {
             text-align: right;
-            padding: 0 15px 0 5px;
+            padding: 0 13px 0 5px;
         }
         #no2, 
         #no4 {
-            padding: 0 5px 0 15px;
+            padding: 0 5px 0 9px;
         }
     }
 }
@@ -275,6 +324,15 @@ footer {
     .navbar-default .navbar-nav>li>a {
         color: white;
         padding: 2px 20px 2px 20px;
+    }
+    #parallax {
+        #button {
+        font-size: .9em;
+        letter-spacing: .15em;
+        opacity: .8;
+        width: 20%;
+        padding: 15px;
+        }
     }
     footer {
         #top.container-fluid {
@@ -345,6 +403,14 @@ footer {
         padding: 10px 20px 10px 20px;
         margin-top: -8px;
         color: white;
+    }
+    #parallax {
+        #button {
+        font-size: 1em;
+        letter-spacing: .2em;
+        width: 20%;
+        padding: 20px;
+        }
     }
     footer {
         #top.container-fluid {
