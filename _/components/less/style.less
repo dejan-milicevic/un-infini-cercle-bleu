@@ -8,6 +8,7 @@
 @darkerred:     rgb(177, 54, 54);    //special_order icons
 @gray:          rgb(91, 102, 118);   //footer bottom text
 @borderred:     rgb(206, 62, 62);    //special_order borders
+@iconred:       rgb(159, 49, 49);    //contact icons
 
 //CLEARFIX
 .cf:before,
@@ -23,6 +24,7 @@
 body {
     margin: 0 auto;
     padding-top: 61px;
+    min-width: 400px;
     ul li {
         list-style: none;
     }
@@ -115,10 +117,61 @@ header {
     }
 }
 
+//MAIN - CONTACT
 #contact {
-    height: 360; //to be deleted
     width: 100%;
     background: @red;
+    color: white;
+    border-bottom: 1px solid @borderred;
+    h1 {
+        font-size: 2.5em;
+        padding: 50px 0 30px 0;
+        text-align: center;
+    }
+    h3 {
+        color: @iconred;
+        font-size: 1.5em;
+        padding: 0 25px;
+        margin: 0;
+    }
+    #bottom {
+        text-align: center;
+        ul {
+            font-size: 1em;
+            padding: 35px 25px 0 25px;
+            margin-bottom: 20px;
+            li{
+                padding: 0 0 20px 0;
+            }
+        }
+        #left,
+        #right {
+            display: table-cell;
+        }
+        #left {
+            text-align: right;
+            .fa-envelope {
+                color: @iconred;
+                margin-left: 5%;
+            }
+        }
+        #right {
+            text-align: left;
+            border-left: 1px solid @borderred;
+            .fa-phone {
+                color: @iconred;
+                float: left;
+                margin: 3px 5% 0 0;
+            }
+            ul {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                li:last-of-type {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
 }
 
 //MAIN - SPECIAL ORDERS
@@ -328,6 +381,54 @@ footer {
         color: white;
         padding: 1px 0 1px 5px;
     }
+    
+    
+    #contact {
+        h1 {
+            font-size: 2em;
+            padding: 30px 0 15px 0;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.2em;
+            padding: 0 20px;
+            text-align: left;
+        }
+        #bottom {
+            margin: 0 auto;
+            ul {
+                font-size: .9em;
+                padding: 0 20px;
+                margin: 15px 0 15px 0;
+                border-left: 1px solid @borderred;
+                li {
+                    padding: 0 0 15px 0;
+                    text-align: left;
+                    &:last-of-type {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+            .col-xs-6 {
+                float: none;
+            }
+            #left,
+            #right {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+            }
+            #right {
+                border-left: none;
+                ul {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        
+    }
+    
+    
     #special_orders {
         .col-xs-6 {
             width: 100%;
@@ -471,6 +572,50 @@ footer {
     .navbar-default .navbar-nav>li>a {
         color: white;
         padding: 2px 16px 2px 16px;
+    }
+    #contact {
+        h1 {
+            font-size: 2em;
+            padding: 30px 0 15px 0;
+            margin-left: -5%;
+        }
+        h3 {
+            font-size: 1.2em;
+            padding: 0 20px;
+            text-align: left;
+        }
+        #bottom {
+            margin: 0 auto;
+            ul {
+                font-size: .9em;
+                padding: 0 20px;
+                margin: 15px 0 15px 0;
+                border-left: 1px solid @borderred;
+                li {
+                    padding: 0 0 15px 0;
+                    text-align: left;
+                    &:last-of-type {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+            .col-xs-6 {
+                float: none;
+            }
+            #left,
+            #right {
+                display: inline-block;
+                width: 62%;
+                text-align: center;
+            }
+            #right {
+                border-left: none;
+                ul {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        
     }
     #special_orders {
         #top {
