@@ -3,6 +3,8 @@
 @lightblue:     rgb(58, 69, 90);     //scrollbar background
 @blue:          rgb(40, 52, 75);     //figure background
 @darkblue:      rgb(39, 51, 73);     //header, books & footer background
+@slideblue:     rgb(50, 60, 80);     //slide background
+@scrollblue:    rgb(62, 73, 93);     //scrollbar background
 @red:           rgb(254, 78, 78);    //contact background
 @darkred:       rgb(228, 70, 70);    //special_order background
 @darkerred:     rgb(177, 54, 54);    //special_order icons
@@ -30,6 +32,10 @@ body {
     }
     a:hover {
         text-decoration: none;
+    }
+    .container-fluid {
+        padding: 0;
+        margin: 0;
     }
     .row {
         margin: 0 auto;
@@ -107,15 +113,83 @@ header {
 #books {
     height: 940px; //to be deleted
     width: 100%;
-    #pick_books {
-        height: 475px; //to be deleted
-        background: @darkblue;
-    }
     #book_info {
         height: 465px; 
         background: white;
     }
 }
+
+
+
+//MAIN - PICK BOOKS
+#pick_books {
+    color: white;
+    z-index: 5;
+    background: @blue;
+    #order {
+        border-right: rgb(30, 40, 60);
+        h1 {
+            font-size: 2.5em;
+            padding: 100px 0 0 10%;
+            margin: 0;
+        }
+        h4 {
+            font-size: 2em;
+            padding: 15px 0 50px 10%;
+            margin: 0;
+        }
+        #ghost_btn {
+            color: white;
+            font-size: 1.3em;
+            padding: 10px;
+            margin-left:10%;
+            border: 1px solid white;
+            border-radius: 3px;
+            transition: all 0.5s ease 0s;
+            &:hover {
+                color: @blue;
+                background-color: white;
+            }
+        }
+    }
+    #slide {
+        overflow: auto;
+        background-color: @slideblue;
+        #slide_content {
+            width: 2000px;
+            .image_list {
+                float: left;
+                height: 350px;
+                padding: 50px 50px 50px 10px;
+                img {
+                    height: 100%;
+                }
+            }
+            .hovered {
+                opacity: 0.5;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+        &::-webkit-scrollbar {
+            height: 26px;
+            background-color: @scrollblue;
+        }
+        &::-moz-scrollbar {
+            height: 26px;
+            background-color: @scrollblue;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: @red url(../../images/arrows.png) no-repeat center;
+
+        }
+        &::-moz-scrollbar-thumb {
+            background: @red;
+            cursor: pointer;
+        }
+    }
+}
+
+
 
 //MAIN - CONTACT
 #contact {

@@ -11,4 +11,8 @@ $(document).ready(function(){
         }); //end scroll
     }); //end each  
     
+    $('#slide_content img').hover(function(){
+       $(this).parent().parent().toggleClass('hovered'); 
+    });
+    
 });

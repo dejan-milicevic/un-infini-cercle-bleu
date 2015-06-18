@@ -1,1 +1,1 @@
-$(document).ready(function(){$('div[data-type="parallax"]').each(function(){var a=$(this);$(window).scroll(function(){var b=-($(window).scrollTop()/a.data("speed")),c="0 "+b+"px";a.css("background-position",c)})})});
+$(document).ready(function(){$('div[data-type="parallax"]').each(function(){var a=$(this);$(window).scroll(function(){var b=-($(window).scrollTop()/a.data("speed")),c="0 "+b+"px";a.css("background-position",c)})}),$("#slide_content img").hover(function(){$(this).parent().parent().toggleClass("hovered")})});
