@@ -11,8 +11,11 @@ $(document).ready(function(){
         }); //end scroll
     }); //end each  
     
-    $('#slide_content img').hover(function(){
-       $(this).parent().parent().toggleClass('hovered'); 
+    $('#slide_content .image_list').hover(function(){
+        $(this).toggleClass('hovered'); 
     });
+    
+    var html = '<span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-plus fa-stack-1x fa-inverse"></i></span>';
+    $('#slide_content .image_list').append(html);
     
 });

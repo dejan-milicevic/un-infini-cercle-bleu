@@ -74,8 +74,9 @@ header {
     color: white;
 }
 .navbar-default {
-  background-color: @darkblue;
-  border-color: @darkblue;
+    background-color: @darkblue;
+    border-color: @darkblue;
+    border-bottom: 1px solid darken(@blue, 4%);
 }
 .navbar-collapse {
     float: right;
@@ -110,14 +111,6 @@ header {
         width: 100%;
     }
 }
-#books {
-    height: 940px; //to be deleted
-    width: 100%;
-    #book_info {
-        height: 465px; 
-        background: white;
-    }
-}
 
 
 
@@ -127,7 +120,6 @@ header {
     z-index: 5;
     background: @blue;
     #order {
-        border-right: rgb(30, 40, 60);
         h1 {
             font-size: 2.5em;
             padding: 100px 0 0 10%;
@@ -155,27 +147,42 @@ header {
     #slide {
         overflow: auto;
         background-color: @slideblue;
+        border-left: 1px solid darken(@blue, 4%);
         #slide_content {
-            width: 2000px;
+            width: 1550px;
             .image_list {
                 float: left;
-                height: 350px;
-                padding: 50px 50px 50px 10px;
+                position: relative;
+                transition: all 0.2s ease-in;
                 img {
-                    height: 100%;
+                    height: 350px;
+                    padding: 50px 50px 50px 10px;
+                }
+                span {
+                    position: absolute;
+                    top: 150px;
+                    left: 60px;
+                    opacity: 0;
+                    transition: all 0.2s ease-in;
                 }
             }
             .hovered {
                 opacity: 0.5;
-                transition: all 0.5s ease-in-out;
+                transition: all 0.2s ease-in;
+                span {
+                    opacity: .99;
+                }
+            }
+            .fa-circle {
+                color: @red;
             }
         }
         &::-webkit-scrollbar {
-            height: 26px;
+            height: 24px;
             background-color: @scrollblue;
         }
         &::-moz-scrollbar {
-            height: 26px;
+            height: 24px;
             background-color: @scrollblue;
         }
         &::-webkit-scrollbar-thumb {
@@ -191,6 +198,62 @@ header {
 
 
 
+//MAIN - BOOK INFO
+#book_info {
+    background: white;
+    color: @darkblue;
+    h1 {
+        font-size: 2.5em;
+        padding: 60px 0 0 5%;
+        margin: 0;
+    }
+    h4 {
+        font-size: 2em;
+        padding: 5px 0 20px 5%;
+        margin: 0;
+    }
+    #figure {
+        .row {
+            padding-left: 10%;
+            div {
+                padding: 0;
+            }
+        }
+        img {
+            width: 100%;
+            max-width: 130px;
+            padding: 0;
+        }
+        ul {
+            padding: 20px 0;
+            margin: 0 8%;
+        }
+        ul:first-of-type {
+            padding-top: 10px;
+            border-bottom: 1px solid darken(white, 10%);
+        }
+        li {
+            padding: 1px 0;
+        }
+    }
+    #figure_info {
+        padding: 0 5% 40px 0;
+        blockquote {
+            padding: 0;
+            border-left: none;
+            margin: 0 auto;
+            font-size: 1em;
+        }
+        p {
+            padding-top: 30px;
+            margin: 0 auto;
+        }
+    }
+} 
+
+
+
+
 //MAIN - CONTACT
 #contact {
     width: 100%;
@@ -199,8 +262,9 @@ header {
     border-bottom: 1px solid @borderred;
     h1 {
         font-size: 2.5em;
-        padding: 50px 0 30px 0;
+        padding: 60px 0 40px 0;
         text-align: center;
+        margin: 0;
     }
     h3 {
         color: @iconred;
@@ -455,8 +519,69 @@ footer {
         color: white;
         padding: 1px 0 1px 5px;
     }
-    
-    
+    #pick_books {
+        #slide {
+            padding: 0;
+            #slide_content {
+                width: 1200px;
+                .image_list {
+                    img {
+                        height: 250px;
+                        padding: 25px 30px 30px 10px;
+                    }
+                    span {
+                        top: 90px;
+                        left: 40px;
+                    }
+                }
+            }
+            &::-webkit-scrollbar {
+                height: 20px;
+            }
+            &::-moz-scrollbar {
+                height: 20px;
+            }
+        }
+    }
+    #book_info {
+        font-size: .95em;
+        h1 {
+            padding-top: 25px;
+        }
+        h1, 
+        h4 {
+            padding-left: 10%;    
+        }
+        #figure {
+            width: 100%;
+            .row {
+                padding-left: 8%;
+            }
+            #img {
+                float: left;
+                width: 40%;
+                padding-bottom: 15px;
+            }
+            #edition {
+                float: left;
+                width: 60%;
+                ul {
+                    padding: 10px;
+                }
+            }
+        }
+        #figure_info {
+            padding-bottom: 15px;
+            blockquote {
+                padding-left: 7%;
+                padding-top: 0;
+            }
+            p {
+                padding-left: 7%;
+                padding-top: 13px;
+            }
+        }
+    }
     #contact {
         h1 {
             font-size: 2em;
@@ -501,8 +626,6 @@ footer {
         }
         
     }
-    
-    
     #special_orders {
         .col-xs-6 {
             width: 100%;
@@ -646,6 +769,67 @@ footer {
     .navbar-default .navbar-nav>li>a {
         color: white;
         padding: 2px 16px 2px 16px;
+    }
+    #pick_books {
+        #slide {
+            padding: 0;
+            #slide_content {
+                width: 1200px;
+                .image_list {
+                    img {
+                        height: 250px;
+                        padding: 25px 30px 30px 10px;
+                    }
+                    span {
+                        top: 90px;
+                        left: 40px;
+                    }
+                }
+            }
+            &::-webkit-scrollbar {
+                height: 20px;
+            }
+            &::-moz-scrollbar {
+                height: 20px;
+            }
+        }
+    }
+    #book_info {
+        font-size: .95em;
+        h1 {
+            padding-top: 30px;
+        }
+        h1, 
+        h4 {
+            padding-left: 10%;    
+        }
+        #figure {
+            width: 100%;
+            .row {
+                padding-left: 8%;
+            }
+            #img {
+                float: left;
+                width: 30%;
+            }
+            #edition {
+                float: left;
+                ul {
+                    padding: 10px;
+                }
+            }
+        }
+        #figure_info {
+            padding-bottom: 20px;
+            blockquote {
+                padding-left: 7%;
+                padding-top: 0;
+            }
+            p {
+                padding-left: 7%;
+                padding-top: 15px;
+            }
+        }
     }
     #contact {
         h1 {
@@ -832,6 +1016,23 @@ footer {
         margin-top: -8px;
         color: white;
     }
+    
+    #book_info {
+        #figure {
+            float: left;
+            width: 55%;
+            ul {
+                margin-right: 0;
+            }
+        }
+        #figure_info {
+            blockquote,
+            p {
+                padding-left: 7%;
+            }
+        }
+    }
+    
     #special_orders {
         #top {
             h3 {
