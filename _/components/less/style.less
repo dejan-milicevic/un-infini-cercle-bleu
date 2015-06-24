@@ -104,15 +104,46 @@ header {
     transition: all .5s ease-in;
 }
 
-//MAIN
+//MAIN - BOOK SHELF
 #book_shelf {
     width: 100%;
-    img {
-        width: 100%;
-    }
+    background: url(../../images/books_background.png) no-repeat;
+    background-size: cover;
+    cursor: none;
+    position: relative;
+    overflow: hidden;
 }
-
-
+.book {
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: transform 0.4s ease-out;
+       -moz-transition: transform 0.4s ease-out;
+         -o-transition: transform 0.4s ease-out;
+            transition: transform 0.4s ease-out;
+}
+.rot_l:hover .book {
+    cursor: none;
+    -webkit-transform: rotate(10deg) scale(1.2, 1.2);
+       -moz-transform: rotate(10deg) scale(1.2, 1.2);
+         -o-transform: rotate(10deg) scale(1.2, 1.2);
+            transform: rotate(10deg) scale(1.2, 1.2);
+}
+#custom_cursor {
+    cursor: none;
+    width: 271px;
+    height: 263px;
+    background: url("../../images/hand.png") no-repeat left top;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#custom_cursor:hover {
+    cursor: none;
+    display: block;
+}
 
 //MAIN - PICK BOOKS
 #pick_books {
@@ -811,6 +842,7 @@ footer {
             #img {
                 float: left;
                 width: 30%;
+                padding-bottom: 20px;
             }
             #edition {
                 float: left;
@@ -1026,6 +1058,7 @@ footer {
             }
         }
         #figure_info {
+            padding-bottom: 30px;
             blockquote,
             p {
                 padding-left: 7%;

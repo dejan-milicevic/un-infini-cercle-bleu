@@ -8,6 +8,7 @@
         <link href="_/css/style.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
         <script src="_/js/script.js"></script>
         <title>Un Infini Cercle Bleu</title>
     </head>
@@ -39,9 +40,18 @@
         
         <main>
             <div id="container">
+                
+                
                 <div id="book_shelf">
-                    <img src="images/books_background.png" alt="table">
+                    <a href="#" class="rot_l"><img src="images/book1.png" alt="image" class="book"></a>
+                    <a href="#" class="rot_l"><img src="images/book2.png" alt="image" class="book"></a>
+                    <a href="#" class="rot_l"><img src="images/book3.png" alt="image" class="book"></a>
+                    <a href="#" class="rot_l"><img src="images/book4.png" alt="image" class="book"></a>
+                    <a href="#" class="rot_l"><img src="images/book5.png" alt="image" class="book"></a>
+                    <a href="#" class="rot_l"><img src="images/book6.png" alt="image" class="book"></a>
                 </div>
+                
+                
                 <div id="books">
 
                     
@@ -85,12 +95,12 @@
                                         <img src="images/List-Image1.jpg" class="img-responsive" alt="list image">
                                     </div>
                                     <div id="edition" class="col-sm-8">
-                                        <ul>
+                                        <ul id="top">
                                             <li>édition bilingue</li>
                                             <li>traduit du serbe par Adolphe d'Avril</li>
                                             <li>préface de Komnen Becirovic</li>
                                         </ul>
-                                        <ul>
+                                        <ul id="bottom">
                                             <li>paru décembre 2006</li>
                                             <li>108 pages, <strong>Prix 14 &euro;</strong></li>
                                             <li>Format 12x19 cm</li>
@@ -103,7 +113,7 @@
                                 <blockquote>
                                     &ldquo;Le désastre de Kossovo avait frappé profondément l’imagination des Serbes ; il est devenu le principal aliment de leur poésie populaire. Comme toujours, cette poésie a transformé l’histoire en l’idéalisant. Les personnages réels ou fictifs qui figurent dans la légende ont pris des proportions réellement épiques. Lazare y représente la splendeur de la royauté. Son mobile est le sentiment exalté du devoir, la soumission à Dieu, le dévouement absolu. Sous ce rapport, il rappellerait plutôt les héros indiens, français, espagnols, que ceux de la Grèce ou de la Germanie&rdquo; <cite><strong>Adolphe D'Avril</strong></cite>
                                 </blockquote>
-                                <p class="paragraph">
+                                <p>
                                     Les chants épiques serbes ont été transmis oralement, génération après génération, siècle après siècle, et ont joué un rôle essentiel dans la préservation de l’identité nationale du peuple serbe. Avec l’épopée de Kossovo, nous proposons au lecteur d’accéder directement, par lui-même, aux sources d’un mythe fondateur qui, au-delà de l’histoire serbe, touche à l’universel.
                                 </p>
                             </div>
@@ -262,6 +272,13 @@
                 </div>
             </div>
         </footer>
+        <script>
+            var dataJson;
+            function dataHandler(info) {
+                dataJson = info;
+            } //end function dataHandler
+        </script>
+        <script src="data.json"></script>
         <script src="http://localhost:35729/livereload.js"></script>
     </body>
 </html>
