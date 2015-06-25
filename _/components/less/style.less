@@ -109,7 +109,7 @@ header {
     width: 100%;
     background: url(../../images/books_background.png) no-repeat;
     background-size: cover;
-    cursor: none;
+//    cursor: none;
     position: relative;
     overflow: hidden;
 }
@@ -117,32 +117,28 @@ header {
     height: 350px;
     position: absolute;
     z-index: 1;
-    -webkit-transition: transform 0.4s ease-out;
-       -moz-transition: transform 0.4s ease-out;
-         -o-transition: transform 0.4s ease-out;
-            transition: transform 0.4s ease-out;
+    -webkit-transition: transform 0.3s ease-out;
+       -moz-transition: transform 0.3s ease-out;
+         -o-transition: transform 0.3s ease-out;
+            transition: transform 0.3s ease-out;
 }
 .rot_l:hover .book {
-    cursor: none;
+//    cursor: none;
     -webkit-transform: rotate(10deg) scale(1.2, 1.2);
        -moz-transform: rotate(10deg) scale(1.2, 1.2);
          -o-transform: rotate(10deg) scale(1.2, 1.2);
             transform: rotate(10deg) scale(1.2, 1.2);
 }
 #custom_cursor {
-    cursor: none;
-    width: 271px;
-    height: 263px;
-    background: url("../../images/hand.png") no-repeat left top;
+    width: 390px;
+    height: 300px;
+    background: url(../../images/hand.png) no-repeat left top;
+    background-size: cover; 
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     z-index: 10;
-}
-#custom_cursor:hover {
-    cursor: none;
-    display: block;
 }
 
 //MAIN - PICK BOOKS

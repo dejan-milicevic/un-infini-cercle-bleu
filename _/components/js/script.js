@@ -1,6 +1,8 @@
 $(document).ready(function(){
     
-    // BOOK SHELF
+    
+    // MAIN - BOOK SHELF 
+    
     var imagePositions, x1, x2, x3, y1, y2, horizDist, vertDist, koef, bookHeight;
     
     // book_shelf height
@@ -66,13 +68,10 @@ $(document).ready(function(){
             }).css('top', function(index) {
                 return Math.floor(imagePositionsShuffled[index][1] * koef) + 'px';
             });
+//        $('#custom_cursor').css('width', Math.floor(390 * koef)).css('height', Math.floor(300 * koef));
 
     }); //end resize
     
-    console.log(dataJson); //dataJson is defined as global variable in index.html. It has content of JSON file.
-    
-    
-    //MAIN - BOOK SHELF
     $('#book_shelf').mouseout(function(){
            	$('#custom_cursor').hide();
       	}); //end mouseout
@@ -82,8 +81,10 @@ $(document).ready(function(){
     }); //end mouseenter
     
     $('#book_shelf').mousemove(function(e){
-        $('#custom_cursor').css('left', e.pageX).css('top', e.pageY).css('display', 'block');
+        $('#custom_cursor').css('left', e.pageX - 45).css('top', e.pageY - 80).css('display', 'block');
     }); //end mousemove
+    
+    console.log(dataJson); //dataJson is defined as global variable in index.html. It has content of JSON file.
     
     
     //MAIN - PICK BOOKS
@@ -110,6 +111,7 @@ $(document).ready(function(){
     
     
     //MAIN - PARALLAX
+    
     $('div[data-type="parallax"]').each(function(){
         var $obj = $(this); 
         $(window).scroll(function() {
