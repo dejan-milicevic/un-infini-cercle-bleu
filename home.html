@@ -2,14 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link href="_/css/style.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-        <script src="_/js/script.js"></script>
+        <link rel="stylesheet" href="_/css/style.css">
         <title>Un Infini Cercle Bleu</title>
     </head>
     <body>
@@ -24,63 +20,87 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="un infini cercle bleu"></a>
+                    <a href="#book_shelf" class="navbar-brand scroll"><img src="images/logo.png" alt="logo"></a>
                 </div>
                 <!-- Collect the nav links and other content for toggling -->
                 <div class="collapse navbar-collapse" id="collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#book_shelf">ACCUIEL</a></li>
-                        <li><a href="#books">OU TROUVER NOS LIVRES?</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                        <li><a href="#">ASSOCIATION</a></li>
+                        <li><a href="#books" class="scroll">ACCUIEL</a></li>
+                        <li><a href="#trouver" class="scroll">OU TROUVER NOS LIVRES?</a></li>
+                        <li><a href="#special_orders" class="scroll">CONTACT</a></li>
+                        <li><a href="#book_shelf" class="scroll">ASSOCIATION</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         
         <main>
+            
             <div id="container">
                 
-                
                 <div id="book_shelf">
-                    <a href="#" class="rot_l"><img src="images/book1.png" alt="image" class="book"></a>
-                    <a href="#" class="rot_l"><img src="images/book2.png" alt="image" class="book"></a>
-                    <a href="#" class="rot_l"><img src="images/book3.png" alt="image" class="book"></a>
-                    <a href="#" class="rot_l"><img src="images/book4.png" alt="image" class="book"></a>
-                    <a href="#" class="rot_l"><img src="images/book5.png" alt="image" class="book"></a>
-                    <a href="#" class="rot_l"><img src="images/book6.png" alt="image" class="book"></a>
-                </div>
-                
+                    <img src="images/book1.png" class="book" alt="contes populaires serbes">
+                    <img src="images/book2.png" class="book" alt="l'home qui inventa">
+                    <img src="images/book3.png" class="book" alt="de kossovo">
+                    <img src="images/book4.png" class="book" alt="nikola tesla">
+                    <img src="images/book5.png" class="book" alt="anthologie de la poesie">
+                    <img src="images/book6.png" class="book" alt="la livre de miloutine">
+                    <figure id="hand_pointer0" class="pointer"></figure>
+                    <figure id="hand_pointer1" class="pointer"></figure>
+                    <figure id="hand_pointer2" class="pointer"></figure>
+                    <figure id="hand_pointer3" class="pointer"></figure>
+                    <figure id="hand_pointer4" class="pointer"></figure>
+                    <figure id="hand_pointer5" class="pointer"></figure>
+                </div><!-- #book_shelf -->
                 
                 <div id="books">
-
-                    
                     <div id="pick_books" class="container-fluid">
                         <div class="row">
                             <div id="order" class="col-sm-5 hidden-xs">
                                 <h1>Un Infini Cercle Bleu</h1>
                                 <h4>Editions</h4>
                                 <div>
-                                    <a href="#" id="ghost_btn">COMMANDES</a>
+                                    <a href="#special_orders" id="ghost_btn" class="scroll">COMMANDES</a>
                                 </div>
                             </div>
                             <div id="slide" class="col-sm-7">
                                 <div id="slide_content">
                                     <ul>
-                                        <li class="image_list"><a href="#books"><img src="images/List-Image1.jpg"></a></li>
-                                        <li class="image_list"><a href="#books"><img src="images/List-Image2.jpg"></a></li>
-                                        <li class="image_list"><a href="#books"><img src="images/List-Image3.jpg"></a></li>
-                                        <li class="image_list"><a href="#books"><img src="images/List-Image4.jpg"></a></li>
-                                        <li class="image_list"><a href="#books"><img src="images/List-Image5.png"></a></li>
-                                        <li class="image_list"><a href="#books"><img src="images/List-Image6.jpg"></a></li>
+                                        <li class="image_list">
+                                            <a href="#books" class="scroll">
+                                                <img src="images/List-Image1.png" alt="de kossovo">
+                                            </a>
+                                        </li>
+                                        <li class="image_list">
+                                            <a href="#books" class="scroll">
+                                                <img src="images/List-Image2.png" alt="l'home qui inventa">
+                                            </a>
+                                        </li>
+                                        <li class="image_list">
+                                            <a href="#books" class="scroll">
+                                                <img src="images/List-Image3.png" alt="contes populaires serbes">
+                                            </a>
+                                        </li>
+                                        <li class="image_list">
+                                            <a href="#books" class="scroll">
+                                                <img src="images/List-Image4.png" alt="nikola tesla">
+                                            </a>
+                                        </li>
+                                        <li class="image_list">
+                                            <a href="#books" class="scroll">
+                                                <img src="images/List-Image5.png" alt="anthologie de la poesie">
+                                            </a>
+                                        </li>
+                                        <li class="image_list">
+                                            <a href="#books" class="scroll">
+                                                <img src="images/List-Image6.png" alt="la livre de miloutine">
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    
-
+                    </div><!-- #pick_books -->
                     <div id="book_info" class="container-fluid">
                         <h1>
                             La Bataille de Kossovo
@@ -92,15 +112,15 @@
                             <div id="figure" class="col-md-5">
                                 <div class="row">
                                     <div id="img" class="col-sm-4">
-                                        <img src="images/List-Image1.jpg" class="img-responsive" alt="list image">
+                                        <img src="images/List-Image1.png" class="img-responsive" alt="de kossovo">
                                     </div>
                                     <div id="edition" class="col-sm-8">
-                                        <ul id="top">
+                                        <ul id="ed_top">
                                             <li>édition bilingue</li>
                                             <li>traduit du serbe par Adolphe d'Avril</li>
                                             <li>préface de Komnen Becirovic</li>
                                         </ul>
-                                        <ul id="bottom">
+                                        <ul id="ed_bottom">
                                             <li>paru décembre 2006</li>
                                             <li>108 pages, <strong>Prix 14 &euro;</strong></li>
                                             <li>Format 12x19 cm</li>
@@ -118,19 +138,16 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    
-                    
-                    
-                </div>
+                    </div><!-- #book_info -->
+                </div><!-- #books -->
                 
-                <div id="contact">
-                    <div id="top">
+                <div id="trouver">
+                    <div id="trouver_top">
                         <h1>O&ugrave; trouver nos livres?</h1>
                     </div>
-                    <div id="bottom" class="container-fluid">
+                    <div id="trouver_bottom" class="container-fluid">
                         <div class="row">
-                            <div id="left" class="col-xs-6">
+                            <div id="trouver_left" class="col-xs-6">
                                 <h3>LIBRARIES</h3>
                                 <ul>
                                     <li>par <strong>Dilicom</strong></li>
@@ -139,67 +156,69 @@
                                 </ul>
                             </div>
                             <div class="clearfix visible-xs-block"></div>
-                            <div id="right" class="col-xs-6">
+                            <div id="trouver_right" class="col-xs-6">
                                 <h3>PARTICULIERS</h3>
                                 <ul>
                                     <li>directment notre site, ou chez votre libraire</li>
-                                    <i class="fa fa-phone fa-4x"></i>
-                                    <li>Natacha Pejin</li>
+                                    <li><i class="fa fa-phone fa-4x"></i>Natacha Pejin</li>
                                     <li>06.63.63.08.20.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                
+                </div><!-- #contact -->
                 
                 <div id="special_orders">
-                    <div id="top">
+                    <div id="so_top">
                         <h3>Commandes particuliers:</h3>
                         <p>Pour acheter nos livres, merci de nous envoyer votre commande par e-mail/courrier.</p>
                     </div>
                     <div class="container-fluid">
-                        <div id="bottom" class="row">
-                            <div id="no1" class="no-float col-xs-6 col-md-3">
+                        <div id="so_bottom" class="row">
+                            <div id="so_no1" class="no-float col-xs-6 col-md-3">
                                 <h3>Paiment par:</h3>
                                 <span class="icon post"></span>
                                 <p class="content">
                                     &agrave; l'ordre de Un Infini Cercle Bleu
                                 </p>
-                            </div>
-                            <div id="no2" class="no-float col-xs-6 col-md-3">
+                            </div><!-- #so_no1 -->
+                            <div id="so_no2" class="no-float col-xs-6 col-md-3">
                                 <h3 style="visibility:hidden;">Invisible content</h3>
                                 <span class="icon paypal"></span>
                                 <span class="icon transfer"></span>
-                                <p id="second">
+                                <p id="so_second">
                                     Virement (nous contacter)
                                 </p>
-                            </div>
+                            </div><!-- #so_no2 -->
                             <div class="clearfix visible-xs-block visible-sm-block"></div>
-                            <div id="no3" class="no-float col-xs-6 col-md-3">
+                            <div id="so_no3" class="no-float col-xs-6 col-md-3">
                                 <h3>Livraison:</h3>
                                 <span class="icon truck"></span>
                                 <p class="content">
                                     Livraison <strong>gratuite </strong>pour la France.
                                 </p>
-                            </div>
-                            <div id="no4" class="no-float col-xs-6 col-md-3">
+                            </div><!-- #so_no3 -->
+                            <div id="so_no4" class="no-float col-xs-6 col-md-3">
                                 <h3 style="visibility:hidden;">invisible content</h3>
-                                <p>D&egrave;s la r&eacute;ception de votre r&egrave;glement</br>nous vous enverrons la commande</br>&agrave; l'adresse indiquee.</p>
-                            </div>
+                                <p>D&egrave;s la r&eacute;ception de votre r&egrave;glement<br>nous vous enverrons la commande<br>&agrave; l'adresse indiquee.</p>
+                            </div><!-- #so_no4 -->
                         </div>
                     </div>
-                </div>
+                </div><!-- #special_orders -->
+    
                 <div id="parallax">
                     <div id="img1" data-speed="6" data-type="parallax"></div>
                     <div id="img2" data-speed="3" data-type="parallax"></div>
-                    <a id="button" href="#">POUR D&Eacute;COUVRIR NOTRE ASSOCIATION   <i class="fa fa-caret-right"></i></a>
-                </div>
-            </div>
+                    <a href="#book_shelf" id="button" class="scroll">POUR D&Eacute;COUVRIR NOTRE ASSOCIATION   <i class="fa fa-caret-right"></i></a>
+                </div><!-- #parallax -->
+    
+            </div><!-- #container -->
+
         </main>
+
         <footer>
             <div id="footer_container">
-                <div id="top" class="container-fluid">
+                <div id="f_top" class="container-fluid">
                     <div class="row">
                         <div id="first" class="col-xs-12 col-sm-12 col-md-6">
                             <div class="row">
@@ -221,17 +240,17 @@
                                         <li><i class="fa fa-phone"></i>      Tel + 33 (0)6 63 63 08 20</li>
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
+                            </div> 
+                        </div><!-- #first -->
                         <div id="second" class="col-xs-12 col-sm-12 col-md-6">
                             <div class="row">
                                 <div id="no3" class="col-xs-6 col-sm-6">
                                     <h4>LIENS</h4>
                                     <ul>
-                                        <li><a href="#book_shelf">ACCUIEL</a></li>
-                                        <li><a href="#books">OU TROUVER NOS LIVRES?</a></li>
-                                        <li><a href="#contact">CONTACT</a></li>
-                                        <li><a href="#">ASSOCIATION</a></li>
+                                        <li><a href="#books" class="scroll">ACCUIEL</a></li>
+                                        <li><a href="#trouver" class="scroll">OU TROUVER NOS LIVRES?</a></li>
+                                        <li><a href="#special_orders" class="scroll">CONTACT</a></li>
+                                        <li><a href="#book_shelf" class="scroll">ASSOCIATION</a></li>
                                     </ul>                        
                                 </div>
                                 <div id="no4" class="col-xs-6 col-sm-6">
@@ -264,14 +283,17 @@
                                     </ul>    
                                 </div>
                             </div>
-                        </div>
+                        </div><!-- #second -->
                     </div>
-                </div>
-                <div id="bottom">
+                </div><!-- #f_top -->
+                <div id="f_bottom">
                     <p><small>&copy; by Un Infini Cercle Bleu</small></p>
-                </div>
-            </div>
+                </div><!-- #f_bottom -->
+            </div><!-- #footer_container -->
         </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script>
             var dataJson;
             function dataHandler(info) {
@@ -279,6 +301,8 @@
             } //end function dataHandler
         </script>
         <script src="data.json"></script>
+        <script src="_/js/script.js"></script>
         <script src="http://localhost:35729/livereload.js"></script>
+
     </body>
 </html>
