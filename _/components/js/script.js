@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.scroll').click(function(event){		
 		    event.preventDefault();
 		    $('body, html').animate({ scrollTop:$($(this).attr('href')).offset().top - $('.navbar').height() - 1 }, 1000);
-    });    
+    });   
     
 
     //MAIN - BOOK SHELF
